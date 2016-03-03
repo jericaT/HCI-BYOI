@@ -37,11 +37,24 @@
     <script src="js/message-handler.js"></script>
     <script src="js/move.js"></script>
     <script src="js/send.js"></script>
+    <script src="js/securityButtons.js"></script>
     <!-- minimal stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div id='container'>
+    <div id="container">
+      <ul id="security">
+        <li><img id="imgSec" class="topPane" src="images\images\security.png" /></li>
+        <ul id="secButtons" class="secPane">
+          <li><img id="imgEnc" src="images\images\encrypt.png" /></li>
+          <li><img id="imgDec" src="images\images\decrypt.png" /></li>
+          <li><img id="imgChe" src="images\images\checksum.png" /></li>
+          <li><img id="imgVer" src="images\images\verchecksum.png" /></li>
+          <li><img id="imgRan" src="images\images\random.png" /></li>
+        </ul>
+      </ul>
+    </div>
+    <div id='container2'>
         <div id='sidebar'>
             <div id="connectionButtons">
                 <button
@@ -57,11 +70,6 @@
                 <button type="button" id='downButton' >Move Down</button>
                 <button type="button" id='combineButton' >Combine</button>
                 <button type="button" id='splitButton' >Split</button>
-                <button type="button" id='checksumButton' >Add Checksum</button>
-                <button type="button" id='verifyButton' >Verify Checksum</button>
-                <button type="button" id='encryptButton' >Encrypt</button>
-                <button type="button" id='decryptButton' >Decrypt</button>
-                <button type="button" id='randomButton' >Add Random Number</button>
                 <button type="button" id='deleteButton' >Delete</button>
             </div><!-- #loggedInButtons -->
         </div><!-- #sidebar -->

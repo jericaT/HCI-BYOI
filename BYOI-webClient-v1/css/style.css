@@ -16,6 +16,31 @@ body {
     margin:auto;
 }
 
+#container2{
+    width:800px;
+    margin:auto;
+    position: relative;
+    top: 200px;
+}
+
+
+.topPane{
+  position: relative;
+  top:60px;
+  left: 55px;
+}
+
+.secPane{
+  position: relative;
+  top: 40px;
+}
+
+ul li{
+  list-style-type: none;
+  padding: 0;
+  display: inline;
+}
+
 #sidebar{
     width:200px;
     float:right;

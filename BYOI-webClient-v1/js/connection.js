@@ -22,6 +22,7 @@ function getCookie(cname) {
     return 0;
 }
 $(document).ready(function() {
+    $("#container").hide();
     $('#loggedInButtons').hide();
     $('#main').hide();
     if (! ("WebSocket" in window)) {
@@ -41,7 +42,7 @@ $(document).ready(function() {
             };
             BYOI.connection.send(JSON.stringify(message));
         };
-        
+
         BYOI.connection.onmessage = function (e) {
             var received = JSON.parse(e.data);
             var type = received.type; // Could be instructions, broadcast, connected or message
@@ -63,6 +64,7 @@ $(document).ready(function() {
                     $('#systemMessage').html("new game join");
                 }
                 $('#messageList').append("<div class=\"received\"><span class=\"connected\">Node Number:  "+BYOI.myNode+"</span> | Node name: <span class=\"text\">"+BYOI.myName+"</span></div>");
+                $('#container').show();
                 $('#loggedInButtons').show();
                 $('#main').show();
             }
@@ -121,4 +123,3 @@ $(document).ready(function() {
         BYOI.connection.close();
     });
 });
-
