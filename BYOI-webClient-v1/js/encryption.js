@@ -17,10 +17,10 @@ $(document).ready(function() {
         var checksum = (98 - (sumGenerator(val) * 100 % 97)) % 97;
         $('#msg').val(val + ':' + checksum.toString());
     };
-    
+
     //bind the button to function
-    $('#checksumButton').click(BYOI.addChecksum);
-    
+    $('#imgChe').click(BYOI.addChecksum);
+
     //verifies the validity of the checksum in the message box
     BYOI.verifyChecksum = function(){
         var val = $('#msg').val();
@@ -31,15 +31,15 @@ $(document).ready(function() {
         $('#systemMessage').html(msg);
     };
     //bind the button to function
-    $('#verifyButton').click(BYOI.verifyChecksum);
+    $('#imgVer').click(BYOI.verifyChecksum);
 
     //encrypts the message in the message box using the provided key
     //which defaults to your node number
     BYOI.encryptMessage = function(key){
-        //if a key is provided, use, otherwise, get the value from the 
+        //if a key is provided, use, otherwise, get the value from the
         //recipient field, if that field is empty, defaults to node number
         key = typeof key == 'number'? key :
-            $('#recipient').val() != '' ? 
+            $('#recipient').val() != '' ?
             $('#recipient').val() : BYOI.myNode;
         console
         var val = $('#msg').val();
@@ -52,14 +52,14 @@ $(document).ready(function() {
     };
     BYOI.encryptMessage(1);
     //bind the button to function
-    $('#encryptButton').click(BYOI.encryptMessage);
+    $('#imgEnc').click(BYOI.encryptMessage);
 
     //encrypts the message in the message box using the provided key
     BYOI.decryptMessage = function(key){
-        //if a key is provided, use, otherwise, get the value from the 
+        //if a key is provided, use, otherwise, get the value from the
         //recipient field, if that field is empty, defaults to node number
         key = typeof key == 'number'? key :
-            $('#recipient').val() != '' ? 
+            $('#recipient').val() != '' ?
             $('#recipient').val() : BYOI.myNode;
         var encryptedString = $('#msg').val();
         var s = '';
@@ -72,7 +72,7 @@ $(document).ready(function() {
         $('#msg').val(s);
     };
     //bind the button to function
-    $('#decryptButton').click(BYOI.decryptMessage);
+    $('#imgDec').click(BYOI.decryptMessage);
 
     //append a random number to the message box
     BYOI.addRandomNumber = function(){
@@ -80,7 +80,7 @@ $(document).ready(function() {
         $('#msg').val(val + '|' + Math.floor(Math.random() * 10000));
     };
     //bind the button to function
-    $('#randomButton').click(BYOI.addRandomNumber);
+    $('#imgRan').click(BYOI.addRandomNumber);
 
 
 });
