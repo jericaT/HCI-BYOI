@@ -25,19 +25,17 @@ body {
 
 
 .topPane{
+  top: 60px;
   position: relative;
-  top:60px;
-  left: 55px;
 }
 
 .secPane{
-  position: relative;
   top: 40px;
+  position: relative;
 }
 
 ul li{
   list-style-type: none;
-  padding: 0;
   display: inline;
 }
 
