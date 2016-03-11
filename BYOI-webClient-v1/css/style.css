@@ -11,7 +11,7 @@ body {
 
 }
 
-#container{
+.container{
     width:800px;
     margin:auto;
 }
@@ -21,6 +21,10 @@ body {
     margin:auto;
     position: relative;
     top: 200px;
+}
+
+#imgSpeech{
+    width: 150px;
 }
 
 
@@ -61,7 +65,6 @@ ul li{
 #recipient{
     width:50px;
 }
-
 
 #systemMessages strong{
     float:left;

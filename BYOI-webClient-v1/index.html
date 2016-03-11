@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>BYOI: Build Your Own Internet</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- scripts -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"> </script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"> </script>
     <script>
         var BYOI = {}; //api object
         /*
@@ -48,21 +50,34 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 </head>
 <body>
-    <div id="container">
-      <ul id="security">
-        <ul id="topPane" class="topPane">
-          <li><img id="imgSec" src="images\images\security.png" /></li>
-          <li><img id="imgCom" src="images\images\combine.png" /></li>
+  <div class="section">
+
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <ul id="security">
+          <ul id="topPane" class="topPane">
+          <ul>
+            <li><img id="imgSec" src="images\images\security.png" /></li>
+            <li><img id="imgCom" src="images\images\combine.png" /></li>
+          </ul>
+          <!--<ul id="secButtons" class="secPane">-->
+          <ul>
+            <li><img id="imgEnc" src="images\images\encrypt.png" /></li>
+            <li><img id="imgDec" src="images\images\decrypt.png" /></li>
+            <li><img id="imgChe" src="images\images\checksum.png" /></li>
+            <li><img id="imgVer" src="images\images\verchecksum.png" /></li>
+            <li><img id="imgRan" src="images\images\random.png" /></li>
+          </ul>
         </ul>
-        <ul id="secButtons" class="secPane">
-          <li><img id="imgEnc" src="images\images\encrypt.png" /></li>
-          <li><img id="imgDec" src="images\images\decrypt.png" /></li>
-          <li><img id="imgChe" src="images\images\checksum.png" /></li>
-          <li><img id="imgVer" src="images\images\verchecksum.png" /></li>
-          <li><img id="imgRan" src="images\images\random.png" /></li>
-        </ul>
-      </ul>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <img id="imgSpeech" src="images\images\speech.png" />
+      </div>
     </div>
+    </div>
+  </div>
     <div id='container2'>
         <div id='sidebar'>
             <div id="connectionButtons">
