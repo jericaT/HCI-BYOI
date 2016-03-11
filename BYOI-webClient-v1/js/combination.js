@@ -7,21 +7,21 @@ $(document).ready(function() {
             val += $(this).html();
         });
         $('#messageList').append(
-            '<div class="added"><span class="text">' + 
+            '<div class="added"><span class="text">' +
             val +'</span>&nbsp;</div>'
         );
         $('#messageList div').removeClass('selected');
     };
     //bind button to function
-    $('#combineButton').click(BYOI.combineMessages);
+    $('#imgCom').click(BYOI.combineMessages);
 
     //split text in several chunks of length len
-    //and return them in reversed order 
+    //and return them in reversed order
     function chunker(text, len){
         var chunks = [];
         while(text.length > len){
             chunks.unshift(text.substr(0,len))
-            text = text.substr(len);   
+            text = text.substr(len);
         }
         chunks.unshift(text);
         return chunks;
@@ -37,7 +37,7 @@ $(document).ready(function() {
             if(val.length > len){
                 var chunks = chunker(val, len);
                 for(var i=0; i < chunks.length; i++){
-                    $('<div class="added"><span class="text">' + 
+                    $('<div class="added"><span class="text">' +
                         chunks[i] +'</span>&nbsp;</div>')
                         .insertAfter($(this));
                 }
