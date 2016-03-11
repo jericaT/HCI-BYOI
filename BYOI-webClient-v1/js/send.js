@@ -20,6 +20,8 @@ $(document).ready(function() {
         $("#recipient").val("");
         BYOI.connection.send(JSON.stringify(message));
         console.log(BYOI.connection);
+	$("messageList").sortable("refresh");
+	
     };
     //bind the button to function
     $('#sendButton').click(BYOI.sendMessage);

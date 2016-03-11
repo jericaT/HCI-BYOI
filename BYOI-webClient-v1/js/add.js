@@ -17,6 +17,7 @@ $(document).ready(function() {
                 val +'</span>&nbsp;</div>'
             );
         }
+        $('#messageList').sortable('refresh');
     };
     //bind the button to function
     $('#addButton').click(BYOI.addMessage);
