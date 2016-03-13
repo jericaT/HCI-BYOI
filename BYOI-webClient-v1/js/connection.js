@@ -24,6 +24,9 @@ function getCookie(cname) {
 $(document).ready(function() {
     $("#container").hide();
     $('#loggedInButtons').hide();
+    $('#security').hide()
+    $('#logo').hide();
+    $('#talkingGuy').hide();
     $('#main').hide();
     if (! ("WebSocket" in window)) {
         $('#sidebar').hide();
@@ -67,6 +70,9 @@ $(document).ready(function() {
                 $('#container').show();
                 $('#loggedInButtons').show();
                 $('#main').show();
+                $('#security').show();
+                $('#talkingGuy').show();
+                $('#logo').show();
             }
 
             if (type == 'PACKET') {

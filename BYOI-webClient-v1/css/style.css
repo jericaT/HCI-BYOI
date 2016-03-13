@@ -11,6 +11,23 @@ body {
 
 }
 
+ul li{
+  list-style-type: none;
+  display: inline;
+}
+
+strong{
+  color: white;
+  top:30px;
+  position:absolute;
+}
+
+#systemMessage{
+  color: white;
+  top: 50px;
+  position: absolute;
+}
+
 .container-fluid{
     margin:auto;
     padding: 30px;
@@ -20,12 +37,20 @@ body {
   width:800px;
   margin:auto;
   position: relative;
-  top: 100px;
+  top: 40px;
 }
 
 #imgSpeech{
-    width: 150px;
-    position: relative;
+    width: 130px;
+    position: absolute;
+    z-index: -1;
+}
+
+#imgPerson{
+  width: 150px;
+  left: 60px;
+  top: 100px;
+  position: absolute;
 }
 
 #imgBYOI{
@@ -45,7 +70,6 @@ body {
   top: 400px;
 }
 
-
 .topPane{
   top: 60px;
   position: relative;
@@ -54,11 +78,6 @@ body {
 .secPane{
   top: 65px;
   position: relative;
-}
-
-ul li{
-  list-style-type: none;
-  display: inline;
 }
 
 #sidebar{
