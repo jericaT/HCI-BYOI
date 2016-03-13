@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <html class="no-js" lang="">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>BYOI: Build Your Own Internet</title>
@@ -48,8 +49,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <div class="section">
 
+
+  <div id="connectionButton">
+      <button type="button" id="connectButton">Connect</button>
+  </div>
 
   <div class="container-fluid">
     <div class="row-fluid">
@@ -69,59 +73,57 @@
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3">
-        <img id="imgSpeech" src="images\images\speech.png" />
+        <div id="sidebar">
+            <!-- #connectionButtons -->
+            <div id="loggedInButtons">
+                <button type="button" id="closeButton">Close</button>
+                <button type="button" id="sendButton" >Send Message</button>
+                <button type="button" id="combineButton" >Combine</button>
+                <button type="button" id="splitButton" >Split</button>
+                <button type="button" id="deleteButton" >Delete</button>
+            </div>
+        </div>
       </div>
       <div class="col-md-4 col-sm-4 col-xs-4">
         <ol id="logo">
           <li><img id="imgBYOI" src="images\images\BYOI.png" /></li>
           <li><img id="imgBuildYOI" src="images\images\buildyoi.png" /></li>
-        <ol>
+        </ol>
       </div>
     </div>
     </div>
-  </div>
-    <div id='container2'>
-        <div id='sidebar'>
-            <div id="connectionButtons">
-                <button
-                    type="button"
-                    id='connectButton'
-                >Connect</button>
-            </div><!-- #connectionButtons -->
-            <div id="loggedInButtons">
-                <button type="button" id='closeButton'>Close</button>
-                <button type="button" id='sendButton' >Send Message</button>
-                <button type="button" id='combineButton' >Combine</button>
-                <button type="button" id='splitButton' >Split</button>
-                <button type="button" id='deleteButton' >Delete</button>
-            </div><!-- #loggedInButtons -->
-        </div><!-- #sidebar -->
-        <div id='main'>
-            <div id="msgBox">
-                <span>Message to send</span>
-                <input id='msg'
-                    type="text"
-                />
-            </div><!-- #msgBox -->
-            <div id="recipientBox">
-                <span>Recipient (Empty for Broadcast)</span>
-                <input  id='recipient'
-                    type="number"
-                />
-            </div><!-- #recipientBox -->
+
+    <div class="container-fluid2">
+      <div class="row-fluid">
+        <div class="col-md-9 col-sm-9 col-xs-9">
+          <div id="main">
+
+              <div id="messageList">
+                <strong>Messages sent and received</strong>
+              </div>
+              <div id="msgBox">
+                  <span>Message to send</span>
+                  <input id="msg" type="text"/>
+              </div>
+              <div id="recipientBox">
+                  <span>Recipient (Empty for Broadcast)</span>
+                  <input id="recipient" type="number" />
+              </div>
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3">
+            <img id="imgSpeech" src="images\images\speech.png" />
             <div id="systemMessages">
                 <strong>
                     System:&nbsp;
                 </strong>
                 <div id="systemMessage">
                 </div>
-            </div><!-- #systemMessages -->
-            <div id="messageList">
-                <strong>
-                    Messages sent and received
-                </strong>
-            </div><!-- #messageList -->
-        </div><!-- #main -->
-    </div><!-- #container -->
+            </div>
+        </div>
+      </div>
+    </div>
+
 </body>
 </html>

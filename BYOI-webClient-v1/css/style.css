@@ -16,15 +16,14 @@ body {
     padding: 30px;
 }
 
-#container2{
-    width:800px;
-    margin:auto;
-    position: relative;
-    top: 200px;
+.container-fluid2{
+  width:800px;
+  margin:auto;
+  position: relative;
+  top: 100px;
 }
 
 #imgSpeech{
-    top: 40px;
     width: 150px;
     position: relative;
 }
@@ -41,6 +40,10 @@ body {
   position: relative;
 }
 
+#connectionButton{
+  text-align: center;
+  top: 400px;
+}
 
 
 .topPane{
