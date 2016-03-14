@@ -17,15 +17,19 @@ ul li{
 }
 
 strong{
-  color: white;
+  color: green;
   top:30px;
+  right: 1px;
   position:absolute;
+  font-family: monospace;
 }
 
 #systemMessage{
-  color: white;
+  color: green;
   top: 50px;
+  right: 1px;
   position: absolute;
+  font-family: monospace;
 }
 
 .container-fluid{
@@ -37,18 +41,20 @@ strong{
   width:800px;
   margin:auto;
   position: relative;
-  top: 40px;
+  top: 60px;
 }
 
 #imgSpeech{
-    width: 130px;
+    width: 150px;
     position: absolute;
     z-index: -1;
+    transform: scaleX(-1);
+
 }
 
 #imgPerson{
   width: 150px;
-  left: 60px;
+  left: 90px;
   top: 100px;
   position: absolute;
 }
@@ -67,7 +73,8 @@ strong{
 
 #connectionButton{
   text-align: center;
-  top: 400px;
+  top: 200px;
+  position: relative;
 }
 
 .topPane{
