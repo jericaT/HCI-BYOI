@@ -107,7 +107,6 @@ strong{
 }
 
 #msgBox{
-    float:left;
     margin-right:50px;
 }
 
@@ -140,7 +139,7 @@ strong{
 }
 
 #messageList div:hover{
-    border-color:white;
+    background: rgba(0, 221, 79, 0.2);;
 }
 
 #messageList div.selected{

@@ -57,7 +57,7 @@
 
   <div class="container-fluid">
     <div class="row-fluid">
-      <div class="col-md-5 col-sm-5 col-xs-5">
+      <div class="col-md-8 col-sm-8 col-xs-8">
         <ul id="security">
           <ul id="topPane" class="topPane">
               <li><img id="imgSec" src="images\images\security.png" /></li>
@@ -71,16 +71,6 @@
             <li><img id="imgRan" src="images\images\random.png" /></li>
           </ul>
         </ul>
-      </div>
-      <div class="col-md-3 col-sm-3 col-xs-3">
-        <div id="sidebar">
-            <!-- #connectionButtons -->
-            <div id="loggedInButtons">
-                <button type="button" id="sendButton" >Send Message</button>
-                <button type="button" id="splitButton" >Split</button>
-                <button type="button" id="deleteButton" >Delete</button>
-            </div>
-        </div>
       </div>
       <div class="col-md-4 col-sm-4 col-xs-4">
         <ol id="logo">
@@ -102,9 +92,13 @@
               <div id="msgBox">
                   <span id="textInputs">Type in Message</span>
                   <input id="msg" type="text"/>
+                  <img id="imgSend" src="images\images\send.png" />
+                  <img id="imgSplit" src="images\images\split.png" />
+                  <!-- commented unused delete button for now -->
+                  <!--<button type="button" id="deleteButton" >Delete</button-->
               </div>
               <div id="recipientBox">
-                  <span id="textInputs">Node</span>
+                  <span id="textInputs"> Node </span>
                   <input id="recipient" type="number" />
               </div>
 

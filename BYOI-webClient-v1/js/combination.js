@@ -46,5 +46,5 @@ $(document).ready(function() {
         $('#messageList div').removeClass('selected');
     };
     //bind button to function
-    $('#splitButton').click(BYOI.splitMessages);
+    $('#imgSplit').click(BYOI.splitMessages);
 });
