@@ -18,13 +18,21 @@ ul li{
 
 strong{
   color: green;
-  top:30px;
+  top:20px;
   right: 1px;
   position:absolute;
   font-family: monospace;
 }
 
 #systemMessage{
+  color: green;
+  top: 30px;
+  right: 1px;
+  position: absolute;
+  font-family: monospace;
+}
+
+#taskMsg{
   color: green;
   top: 50px;
   right: 1px;

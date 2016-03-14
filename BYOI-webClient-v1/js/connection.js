@@ -82,7 +82,7 @@ $(document).ready(function() {
             }
             if (type == 'TASK') {
                 task = received.task;
-                $('#messageList').append("<div class=\"task\">Task: <span class=\"node\"> " +task+ "</span></div>");
+                $('#taskMsg').append("<div class=\"task\">Task: <span class=\"node\"> " +task+ "</span></div>");
             }
         };
         BYOI.connection.onerror = function (e) {
