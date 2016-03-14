@@ -66,7 +66,7 @@ strong{
 }
 
 #imgBuildYOI{
-  top: 50px;
+  top: 45px;
   width: 200px;
   position: relative;
 }
@@ -75,6 +75,11 @@ strong{
   text-align: center;
   top: 200px;
   position: relative;
+}
+
+#textInputs{
+  font-family: monospace;
+  color: white;
 }
 
 .topPane{
@@ -115,25 +120,29 @@ strong{
 }
 
 #messageList{
-    background-color:#aaa;
-    width:95%;
+    width:100%;
     margin:auto;
+    color: black;
+    font-family: monospace;
 }
+
 #messageList div{
-    border: solid 1px white;
+    border: solid 1px black;
+    padding: 5px;
 }
+
 #messageList div:nth-child(odd) {
-    background-color:#ccc;
+    background: rgba(0, 221, 108, 0.1);
 }
 
 #messageList div:nth-child(even) {
-    background-color:#fff;
+  background: rgba(117, 255, 170, 0.1);
 }
 
 #messageList div:hover{
-    border-color:black;
+    border-color:white;
 }
 
 #messageList div.selected{
-    background:red;
+    background: rgba(0, 221, 79, 0.6);
 }
