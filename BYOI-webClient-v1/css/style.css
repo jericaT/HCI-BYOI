@@ -50,20 +50,24 @@ strong{
     padding: 30px;
 }
 
-.container-fluid2{
+#row{
+  height: 200px;
+}
+
+#row2{
   width:800px;
   margin:auto;
 }
 
 #secondHalf{
-    position: absolute;
+    position: relative;
     top: 230px;
     left: 200px;
 }
 
 #imgSpeech{
     width: 150px;
-    position: absolute;
+    position: relative;
     z-index: -1;
     transform: scaleX(-1);
 
@@ -72,8 +76,7 @@ strong{
 #imgPerson{
   width: 150px;
   left: 90px;
-  top: 100px;
-  position: absolute;
+  position: relative;
 }
 
 #imgBYOI{
@@ -150,6 +153,7 @@ overflow-y: auto;
     margin:auto;
     color: black;
     font-family: monospace;
+
 }
 
 #messageList div{
