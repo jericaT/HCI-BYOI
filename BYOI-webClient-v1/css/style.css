@@ -122,6 +122,11 @@ strong{
     width:50px;
 }
 
+.scrollable{
+max-height: 300px;
+overflow-y: auto;
+}
+
 #systemMessages strong{
     float:left;
 }
