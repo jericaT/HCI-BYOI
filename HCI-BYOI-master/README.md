@@ -1,2 +1,0 @@
-# HCI-BYOI
-Group Project
