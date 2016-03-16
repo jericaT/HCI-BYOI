@@ -81,45 +81,49 @@
     </div>
     </div>
 
-    <div class="container-fluid2">
-      <div class="row-fluid">
-        <div class="col-md-10 col-sm-10 col-xs-10">
-          <div id="main">
+    <div id="secondHalf">
+      <div class="container-fluid2">
+        <div class="row-fluid">
+          <div class="col-md-10 col-sm-10 col-xs-10">
+            <div id="main">
 
-            <div class="scrollable">
-              <div id="messageList">
-                <!--Messages sent and received-->
+              <div class="scrollable">
+                <div id="messageList">
+                  <!--Messages sent and received-->
+                </div>
               </div>
+
+                <div id="msgArea">
+                  <div id="msgBox">
+                      <span id="textInputs">Type in Message</span>
+                      <input id="msg" type="text"/>
+                      <img id="imgSend" src="images\images\send.png" />
+                      <img id="imgSplit" src="images\images\split.png" />
+                      <!-- commented unused delete button for now -->
+                      <!--<button type="button" id="deleteButton" >Delete</button-->
+                  </div>
+                  <div id="recipientBox">
+                      <span id="textInputs"> Node </span>
+                      <input id="recipient" type="number" />
+                  </div>
+              </div>
+
             </div>
-
-              <div id="msgBox">
-                  <span id="textInputs">Type in Message</span>
-                  <input id="msg" type="text"/>
-                  <img id="imgSend" src="images\images\send.png" />
-                  <img id="imgSplit" src="images\images\split.png" />
-                  <!-- commented unused delete button for now -->
-                  <!--<button type="button" id="deleteButton" >Delete</button-->
-              </div>
-              <div id="recipientBox">
-                  <span id="textInputs"> Node </span>
-                  <input id="recipient" type="number" />
-              </div>
-
           </div>
-        </div>
-        <div id="talkingGuy" class="col-md-2 col-sm-2 col-xs-2">
-            <div id="systemMessages">
-                <strong>
-                    System:&nbsp;
-                </strong>
+          <div id="talkingGuy" class="col-md-2 col-sm-2 col-xs-2">
+              <div id="systemMessages">
+                  <strong>
+                      System:&nbsp;
+                  </strong>
 
-                  <div id="systemMessage">
-                  </div>
-                  <div id="taskMsg">
-                  </div>
-            </div>
-            <img id="imgSpeech" src="images\images\speech.png" />
-            <img id="imgPerson" src="images\images\person.png" />
+                    <div id="systemMessage">
+                    </div>
+                    <div id="taskMsg">
+                    </div>
+              </div>
+              <img id="imgSpeech" src="images\images\speech.png" />
+              <img id="imgPerson" src="images\images\person.png" />
+          </div>
         </div>
       </div>
     </div>

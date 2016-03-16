@@ -16,6 +16,11 @@ ul li{
   display: inline;
 }
 
+ol li{
+  list-style-type: none;
+}
+
+
 strong{
   color: green;
   top:20px;
@@ -48,8 +53,12 @@ strong{
 .container-fluid2{
   width:800px;
   margin:auto;
-  position: relative;
-  top: 60px;
+}
+
+#secondHalf{
+    position: absolute;
+    top: 230px;
+    left: 200px;
 }
 
 #imgSpeech{
@@ -90,6 +99,11 @@ strong{
   color: white;
 }
 
+#msgArea{
+  position: absolute;
+  top: 250px;
+}
+
 .topPane{
   top: 60px;
   position: relative;
@@ -123,7 +137,7 @@ strong{
 }
 
 .scrollable{
-max-height: 300px;
+max-height: 250px;
 overflow-y: auto;
 }
 
