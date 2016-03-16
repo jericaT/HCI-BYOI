@@ -27,6 +27,8 @@ $(document).ready(function() {
     $('#security').hide()
     $('#logo').hide();
     $('#talkingGuy').hide();
+    $('#imgSpeech').hide();
+    $('#imgPerson').hide();
     $('#main').hide();
     if (! ("WebSocket" in window)) {
         $('#sidebar').hide();
@@ -73,6 +75,8 @@ $(document).ready(function() {
                 $('#security').show();
                 $('#talkingGuy').show();
                 $('#logo').show();
+                $('#imgSpeech').show();
+                $('#imgPerson').show();
             }
 
             if (type == 'PACKET') {
