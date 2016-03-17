@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
   $('#imgDelete').hide();
 
   var numberOfSelections=0;
@@ -13,7 +13,7 @@ $(document).ready(function(){
     }
   });
     
-    /*//events for when a message is unselected:
+    //events for when a message is unselected:
     $("#messageList").selectable({ unselecting : function(event, ui) {
     //var img_state = true;
     numberOfSelections=numberOfSelections-1;
@@ -21,7 +21,7 @@ $(document).ready(function(){
       $('#imgDelete').hide();
     }
     }
-  });*/
+  });
 
-});
+});*/
 
