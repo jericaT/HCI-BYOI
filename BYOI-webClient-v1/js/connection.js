@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     $('#connectButton').click(function() {
         $('#connectionButton').hide();
-        BYOI.connection = new WebSocket("ws://127.0.0.1:11111/");
+        BYOI.connection = new WebSocket("ws://127.0.0.1:10000/");
 
         BYOI.connection.onopen = function (e) {
             var message = {
