@@ -78,7 +78,7 @@ $(document).ready(function() {
             if (type == 'PACKET') {
                 text = received.text;
                 from = received.from;
-                $('#messageList').append("<div class=\"received\"><span class=\"node\"> "+from+"</span> : <span class=\"text\">"+text+"</span></div>");
+                $('#messageList').append("<id= \"receivedMsgs\" div class=\"received\"><span class=\"node\"> "+from+"</span> : <span class=\"text\">"+text+"</span></div>");
             }
             if (type == 'TASK') {
                 task = received.task;

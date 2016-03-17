@@ -25,6 +25,9 @@ ol li{
   list-style-type: none;
 }
 
+#receivedMsgs{
+  float: right;
+}
 
 strong{
   color: green;
