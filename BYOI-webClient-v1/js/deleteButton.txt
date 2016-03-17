@@ -1,0 +1,12 @@
+$(document).ready(function(){
+  $('#imgDelete').hide();
+
+  $(function() {
+    var img_state = true;
+    $('#imgSend').click(function(){
+      $('#imDelete').show();
+    });
+  });
+
+});
+

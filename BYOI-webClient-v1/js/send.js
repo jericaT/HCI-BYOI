@@ -25,5 +25,12 @@ $(document).ready(function() {
     };
     //bind the button to function
     $('#imgSend').click(BYOI.sendMessage);
+    
+    //makes the send also happen on the EnterButton
+    $('#msg').keypress(function(event){
+      if(event.keyCode==13){
+	BYOI.sendMessage();
+      }
+    });
 
 });

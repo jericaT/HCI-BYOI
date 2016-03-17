@@ -20,6 +20,6 @@ $(document).ready(function() {
     
     
     //bind the button to function
-    $('#deleteButton').click(BYOI.deleteMessages);
+    $('#imgDelete').click(BYOI.deleteMessages);
  
 });

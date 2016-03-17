@@ -27,6 +27,7 @@ $(document).ready(function() {
         return chunks;
     }
 
+
     //splits each selected message into chunks of length len
     //and then add each piece underneath the original 'long' message
     //then, unselect all selected messages
@@ -40,6 +41,7 @@ $(document).ready(function() {
                     $('<div class="added"><span class="text">' +
                         chunks[i] +'</span>&nbsp;</div>')
                         .insertAfter($(this));
+
                 }
             }
         });
