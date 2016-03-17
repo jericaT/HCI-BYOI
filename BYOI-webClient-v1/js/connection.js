@@ -35,8 +35,8 @@ $(document).ready(function() {
         $('body').append("<strong>Browser does not support Web Socket.</br>Please reload page in a modern Browser.</strong>");
     }
 
-    $('#connectButton').click(function() {
-        $('#connectionButton').hide();
+    $('#imgCon').click(function() {
+        $('#imgCon').hide();
         BYOI.connection = new WebSocket("ws://127.0.0.1:10000/");
 
         BYOI.connection.onopen = function (e) {
