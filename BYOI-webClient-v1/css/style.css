@@ -16,6 +16,11 @@ ul li{
   display: inline;
 }
 
+ol li{
+  list-style-type: none;
+}
+
+
 strong{
   color: green;
   top:20px;
@@ -45,16 +50,24 @@ strong{
     padding: 30px;
 }
 
-.container-fluid2{
+#row{
+  height: 200px;
+}
+
+#row2{
   width:800px;
   margin:auto;
-  position: relative;
-  top: 60px;
+}
+
+#secondHalf{
+    position: relative;
+    top: 230px;
+    left: 200px;
 }
 
 #imgSpeech{
     width: 150px;
-    position: absolute;
+    position: relative;
     z-index: -1;
     transform: scaleX(-1);
 
@@ -63,8 +76,7 @@ strong{
 #imgPerson{
   width: 150px;
   left: 90px;
-  top: 100px;
-  position: absolute;
+  position: relative;
 }
 
 #imgBYOI{
@@ -92,6 +104,11 @@ strong{
 #textInputs{
   font-family: monospace;
   color: white;
+}
+
+#msgArea{
+  position: absolute;
+  top: 250px;
 }
 
 .topPane{
@@ -126,6 +143,11 @@ strong{
     width:50px;
 }
 
+.scrollable{
+max-height: 250px;
+overflow-y: auto;
+}
+
 #systemMessages strong{
     float:left;
 }
@@ -135,6 +157,7 @@ strong{
     margin:auto;
     color: black;
     font-family: monospace;
+
 }
 
 #messageList div{
