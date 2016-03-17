@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html class="no-js" lang="">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,9 +10,12 @@
     <!-- scripts -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
     <script src="js/plugins.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js">
+    </script>
     <script>
         var BYOI = {}; //api object
         /*
@@ -47,81 +51,88 @@
     <!-- minimal stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 
 
- <div id="connectionImage">
+    <div id="connectionImage">
         <img id="imgCon" src="images\images\connect.png" />
     </div>
 
-  <div class="container-fluid">
-    <div id="row" class="row">
-      <div class="col-md-8 col-sm-8 col-xs-8">
-        <ul id="security">
-          <ul id="topPane" class="topPane">
-              <li><img id="imgSec" src="images\images\security.png" /></li>
-              <li><img id="imgCom" src="images\images\combine.png" /></li>
-          </ul>
-          <ul id="secButtons" class="secPane">
-            <li><img id="imgEnc" src="images\images\encrypt.png" /></li>
-            <li><img id="imgDec" src="images\images\decrypt.png" /></li>
-            <li><img id="imgChe" src="images\images\checksum.png" /></li>
-            <li><img id="imgVer" src="images\images\verchecksum.png" /></li>
-            <li><img id="imgRan" src="images\images\random.png" /></li>
-          </ul>
-        </ul>
-      </div>
-      <div class="col-md-4 col-sm-4 col-xs-4">
-        <ol id="logo">
-          <li><img id="imgBYOI" src="images\images\BYOI.png" /></li>
-          <li><img id="imgBuildYOI" src="images\images\buildyoi.png" /></li>
-        </ol>
-      </div>
-    </div>
-    <div id="row2" class="row">
-      <div class="col-md-10 col-sm-10 col-xs-10">
-        <div id="main">
-
-          <div class="scrollable">
-            <div id="messageList">
-              <!--Messages sent and received-->
+    <div class="container-fluid">
+        <div id="row" class="row">
+            <div class="col-md-8 col-sm-8 col-xs-8">
+                <ul id="security">
+                    <ul id="topPane" class="topPane">
+                        <li><img id="imgSec" src="images\images\security.png" /></li>
+                        <li><img id="imgCom" src="images\images\combine.png" /></li>
+                    </ul>
+                    <ul id="secButtons" class="secPane">
+                        <li><img id="imgEnc" src="images\images\encrypt.png" /></li>
+                        <li><img id="imgDec" src="images\images\decrypt.png" /></li>
+                        <li><img id="imgChe" src="images\images\checksum.png" /></li>
+                        <li><img id="imgVer" src="images\images\verchecksum.png" /></li>
+                        <li><img id="imgRan" src="images\images\random.png" /></li>
+                    </ul>
+                </ul>
             </div>
-          </div>
-
-            <div id="msgArea">
-              <div id="msgBox">
-                  <span id="textInputs">Type in Message</span>
-                  <input id="msg" type="text"/>
-                  <img id="imgSend" src="images\images\send.png" />
-                  <img id="imgSplit" src="images\images\split.png" />
-                  <!-- commented unused delete button for now -->
-                  <!--<button type="button" id="deleteButton" >Delete</button-->
-              </div>
-              <div id="recipientBox">
-                  <span id="textInputs"> Node </span>
-                  <input id="recipient" type="number" />
-              </div>
-          </div>
-
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <ol id="logo">
+                    <li><img id="imgBYOI" src="images\images\BYOI.png" /></li>
+                    <li><img id="imgBuildYOI" src="images\images\buildyoi.png" /></li>
+                </ol>
+            </div>
         </div>
-      </div>
-      <div id="talkingGuy" class="col-md-2 col-sm-2 col-xs-2">
-          <div id="systemMessages">
-              <strong>
+        <div id="row2" class="row">
+            <div class="col-md-10 col-sm-10 col-xs-10">
+                <div id="main">
+
+                    <div class="scrollable">
+                        <div id="messageList">
+                            <!--Messages sent and received-->
+                        </div>
+                    </div>
+
+                    <div id="msgArea">
+                        <div id="msgBox">
+                            <span id="textInputs">Type in Message</span>
+                            <ul>
+                                <li><input id="recipient" type="number" /> </li>
+                                <li><input id="msg" type="text" /> </li>
+                                <li><img id="imgSend" src="images\images\send.png" /> </li>
+                                <li><img id="imgSplit" src="images\images\split.png" /> </li>
+                            </ul>
+
+
+
+                            <!-- commented unused delete button for now -->
+                            <!--<button type="button" id="deleteButton" >Delete</button-->
+                        </div>
+                        <div id="recipientBox">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="talkingGuy" class="col-md-2 col-sm-2 col-xs-2">
+                <div id="systemMessages">
+                    <strong>
                   System:&nbsp;
               </strong>
 
-                <div id="systemMessage">
+                    <div id="systemMessage">
+                    </div>
+                    <div id="taskMsg">
+                    </div>
                 </div>
-                <div id="taskMsg">
-                </div>
-          </div>
-          <img id="imgSpeech" src="images\images\speech.png" />
-          <img id="imgPerson" src="images\images\person.png" />
-      </div>
+                <img id="imgSpeech" src="images\images\speech.png" />
+                <img id="imgPerson" src="images\images\person.png" />
+            </div>
+        </div>
     </div>
-  </div>
 
 
 </body>
+
 </html>
