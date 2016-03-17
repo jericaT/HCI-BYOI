@@ -1,4 +1,3 @@
-
 body {
     background-image: url("http://i.imgur.com/SQ6gf7Z.png");
     background-repeat: no-repeat;
@@ -8,125 +7,135 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     background-size: 100% 100%;
-
 }
 
-ul li{
-  list-style-type: none;
-  display: inline;
+ul li {
+    list-style-type: none;
+    display: inline;
 }
 
-strong{
-  color: green;
-  top:20px;
-  right: 1px;
-  position:absolute;
-  font-family: monospace;
+ol li {
+    list-style-type: none;
 }
 
-#systemMessage{
-  color: green;
-  top: 30px;
-  right: 1px;
-  position: absolute;
-  font-family: monospace;
+strong {
+    color: green;
+    top: 20px;
+    right: 1px;
+    position: absolute;
+    font-family: monospace;
 }
 
-#taskMsg{
-  color: green;
-  top: 50px;
-  right: 1px;
-  position: absolute;
-  font-family: monospace;
+#systemMessage {
+    color: green;
+    top: 30px;
+    right: 1px;
+    position: absolute;
+    font-family: monospace;
 }
 
-.container-fluid{
-    margin:auto;
+#taskMsg {
+    color: green;
+    top: 50px;
+    right: 1px;
+    position: absolute;
+    font-family: monospace;
+}
+
+.container-fluid {
+    margin: auto;
     padding: 30px;
 }
 
-.container-fluid2{
-  width:800px;
-  margin:auto;
-  position: relative;
-  top: 60px;
+#row {
+    height: 200px;
 }
 
-#imgSpeech{
+#row2 {
+    width: 800px;
+    margin: auto;
+}
+
+#imgSpeech {
     width: 150px;
-    position: absolute;
+    position: relative;
     z-index: -1;
     transform: scaleX(-1);
-
 }
 
-#imgPerson{
-  width: 150px;
-  left: 90px;
-  top: 100px;
-  position: absolute;
+#imgPerson {
+    width: 150px;
+    left: 90px;
+    position: relative;
 }
 
-#imgBYOI{
-  top: 40px;
-  width: 100px;
-  position: relative;
+#imgBYOI {
+    top: 40px;
+    width: 100px;
+    position: relative;
 }
 
-#imgBuildYOI{
-  top: 45px;
-  width: 200px;
-  position: relative;
+#imgBuildYOI {
+    top: 45px;
+    width: 200px;
+    position: relative;
 }
 
-#imgCon{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 130px;
-  margin-top: 350px;
-  position: relative;
+#imgCon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    margin-top: 350px;
+    position: relative;
 }
 
-#textInputs{
-  font-family: monospace;
-  color: white;
+#textInputs {
+    font-family: monospace;
+    color: white;
 }
 
-.topPane{
-  top: 60px;
-  position: relative;
+#msgArea {
+    position: absolute;
+    top: 250px;
 }
 
-.secPane{
-  top: 65px;
-  position: relative;
+.topPane {
+    top: 60px;
+    position: relative;
 }
 
-#sidebar{
-    width:200px;
-    float:right;
+.secPane {
+    top: 65px;
+    position: relative;
 }
 
-#sidebar button{
-    width:100%;
+#sidebar {
+    width: 200px;
+    float: right;
 }
 
-#main{
-    float:left;
-    width:600px;
+
+#main {
+    float: left;
+    width: 600px;
 }
 
-#msgBox{
-    margin-right:50px;
+#msgBox {
+    margin-right: 50px;
 }
 
-#recipient{
-    width:50px;
+#recipient {
+    width: 50px;
 }
 
-#systemMessages strong{
-    float:left;
+.scrollable {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+#systemMessages strong {
+    float: left;
 }
 
 #msg {
@@ -135,33 +144,33 @@ strong{
     background: rgba(0, 222, 101, 0.45)
 }
 
-#recipient{
+#recipient {
     border: solid 1px black;
     padding: 5px;
     background: rgba(0, 222, 101, 0.45)
 }
 
-#messageList{
-    width:100%;
-    margin:auto;
+#messageList {
+    width: 100%;
+    margin: auto;
     color: black;
     font-family: monospace;
 }
 
-#messageList div{
+#messageList div {
     border: solid 1px black;
     padding: 5px;
 }
 
 #messageList div:nth-child(odd) {
     background: rgba(0, 159, 77, 0.4);
-    text-align: right;
+    /*text-align: right;*/
 }
 
 #messageList div:nth-child(even) {
     background: rgba(0, 222, 101, 0.45);
     /*background: rgba(117, 255, 170, 0.4) */
-    text-align: left;
+    /*text-align: left;*/
 }
 
 #messageList div:hover {
