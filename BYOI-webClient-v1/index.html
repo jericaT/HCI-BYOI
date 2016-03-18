@@ -7,6 +7,8 @@
     <title>BYOI: Build Your Own Internet</title>
     <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- scripts -->
@@ -57,7 +59,7 @@
 <body>
     <div id="connectionImage">
         <img id="imgCon" src="images\images\connect.png" />
-        <p id="connectText"> Connect</p>
+        <h1 id="connectText"> Connect</h1>
     </div>
     <div class="container-fluid">
         <div id="row" class="row">
@@ -78,8 +80,8 @@
             </div>
             <div class="col-md-4 col-sm-4 col-xs-4">
                 <ol id="logo">
-                    <li><img id="imgBYOI" src="images\images\BYOI.png" /></li>
-                    <li><img id="imgBuildYOI" src="images\images\buildyoi.png" /></li>
+                    <li><img id="imgBYOI" class="animated lightSpeedIn" src="images\images\BYOI.png" /></li>
+                    <li><img id="imgBuildYOI" class="animated lightSpeedIn" src="images\images\buildyoi.png" /></li>
                 </ol>
             </div>
         </div>
@@ -102,16 +104,9 @@
 
                             <img id="imgSend" src="images\images\send.png" />
                             <img id="imgSplit" src="images\images\split.png" />
-
-                            <!-- <input id="msg" type="text" /> -->
                             <textarea id="msg"> </textarea>
-
-
-
-
-
                             <!-- commented unused delete button for now -->
-                            <!--<button type="button" id="deleteButton" >Delete</button-->
+                            <img id="imgDel" src="images\images\delete.png" />
                         </div>
                         <div id="recipientBox">
                         </div>
@@ -125,11 +120,11 @@
               </strong>
                     <div id="systemMessage">
                     </div>
-                    <div id="taskMsg" class="scrollable2">
+                    <div id="taskMsg" class="scrollable2" >
                     </div>
                 </div>
-                <img id="imgSpeech" src="images\images\speech.png" />
-                <img id="imgPerson" src="images\images\person.png" />
+                <img id="imgSpeech"  src="images\images\speech.png" />
+                <img id="imgPerson" class="animated lightSpeedIn" src="images\images\person.png" />
             </div>
         </div>
     </div>

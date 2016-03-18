@@ -170,8 +170,13 @@ textarea {
     float: right;
 }
 
+#imgDel {
+    width: 6%;
+}
+
 .scrollable {
     max-height: 300px;
+    max-width: 100%;
     overflow-y: auto;
     display: flex;
     flex-direction: column-reverse;

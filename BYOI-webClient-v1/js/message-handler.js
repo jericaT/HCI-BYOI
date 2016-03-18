@@ -6,21 +6,19 @@ $(document).ready(function () {
         '#messageList div',
         function () {
             $(this).toggleClass('selected');
-            $('#messageList').toggleClass('sortable');
-            $('#messageList').sortable();
+            //$('#messageList').toggleClass('sortable');
+            //$('#messageList').sortable();
             $('#msg').val($(this).find('.text').html());
         }
     );
 
     //delete the selected messagess
     BYOI.deleteMessages = function () {
-        $('#messageList .selected').remove();
+        $('#messageList.selected').remove();
     };
 
-
-
     //bind the button to function
-    $('#deleteButton').click(BYOI.deleteMessages);
+    $('#imgDel').click(BYOI.deleteMessages);
 
 
 
