@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>BYOI: Build Your Own Internet</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- scripts -->
@@ -53,12 +55,10 @@
 </head>
 
 <body>
-
-
     <div id="connectionImage">
         <img id="imgCon" src="images\images\connect.png" />
+        <p id="connectText"> Connect</p>
     </div>
-
     <div class="container-fluid">
         <div id="row" class="row">
             <div class="col-md-8 col-sm-8 col-xs-8">
@@ -86,7 +86,6 @@
         <div id="row2" class="row">
             <div class="col-md-10 col-sm-10 col-xs-10">
                 <div id="main">
-
                     <div class="scrollable">
                         <div id="messageList">
                             <!--Messages sent and received-->
@@ -95,13 +94,19 @@
 
                     <div id="msgArea">
                         <div id="msgBox">
+
                             <span id="textInputs">Type in Message</span>
-                            <ul>
-                                <li><input id="recipient" type="number" /> </li>
-                                <li><input id="msg" type="text" /> </li>
-                                <li><img id="imgSend" src="images\images\send.png" /> </li>
-                                <li><img id="imgSplit" src="images\images\split.png" /> </li>
-                            </ul>
+
+                            <!-- <textarea id="recipient"> </textarea> -->
+                            <input id="recipient" type="number" />
+
+                            <img id="imgSend" src="images\images\send.png" />
+                            <img id="imgSplit" src="images\images\split.png" />
+
+                            <!-- <input id="msg" type="text" /> -->
+                            <textarea id="msg"> </textarea>
+
+
 
 
 
@@ -109,10 +114,8 @@
                             <!--<button type="button" id="deleteButton" >Delete</button-->
                         </div>
                         <div id="recipientBox">
-
                         </div>
                     </div>
-
                 </div>
             </div>
             <div id="talkingGuy" class="col-md-2 col-sm-2 col-xs-2">
@@ -120,10 +123,9 @@
                     <strong>
                   System:&nbsp;
               </strong>
-
                     <div id="systemMessage">
                     </div>
-                    <div id="taskMsg">
+                    <div id="taskMsg" class="scrollable2">
                     </div>
                 </div>
                 <img id="imgSpeech" src="images\images\speech.png" />
@@ -131,8 +133,6 @@
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>

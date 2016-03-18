@@ -8,6 +8,7 @@ body {
     background-size: cover;
     background-size: 100% 100%;
     height: 100%;
+    font-size: 16px;
 }
 
 html {
@@ -28,6 +29,15 @@ strong {
     top: 20px;
     right: 1px;
     position: absolute;
+    font-family: Century Gothic, sans-serif;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+    position: relative;
+    height: 32px;
     font-family: Century Gothic, sans-serif;
 }
 
@@ -54,28 +64,43 @@ strong {
 }
 
 #row {
-    height: 35%;
+    height: 25%;
 }
 
 #row2 {
-    width: 800px;
+    height: 70%;
+    width: 75%;
     margin: auto;
+    padding-top: 5%
 }
 
 #imgSpeech {
-    width: 150px;
+    width: 200px;
+    height: 200px;
     position: relative;
     z-index: -1;
     transform: scaleX(-1);
 }
 
+#talkingGuy {
+    float: right;
+    right: -5%;
+}
+
 #imgPerson {
     width: 150px;
-    left: 90px;
     position: relative;
+    right: -40%;
+}
+
+#logo {
+    float: right;
+    padding-right: 20%;
+    padding-top: 3%;
 }
 
 #imgBYOI {
+    float: right;
     top: 40px;
     width: 100px;
     position: relative;
@@ -96,23 +121,30 @@ strong {
     position: relative;
 }
 
+#connectText {
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 44.2%;
+    font-family: Ubuntu;
+    outline-color: black;
+    color: rgba(0, 222, 101, 0.45)
+}
+
 #textInputs {
     font-family: Century Gothic, sans-serif;
     color: white;
 }
 
-#msgArea {
-    position: absolute;
-    top: 250px;
-}
-
 .topPane {
-    top: 60px;
+    padding-top: 5%;
+    padding-left: 6%;
     position: relative;
 }
 
 .secPane {
-    top: 65px;
+    padding-top: 1%;
+    padding-left: 6%;
     position: relative;
 }
 
@@ -120,7 +152,6 @@ strong {
     width: 200px;
     float: right;
 }
-
 
 #main {
     float: left;
@@ -140,35 +171,51 @@ strong {
 }
 
 .scrollable {
-    max-height: 250px;
+    max-height: 300px;
     overflow-y: auto;
     display: flex;
     flex-direction: column-reverse;
 }
 
-#systemMessages strong {
-    float: left;
+.scrollable2 {
+    max-height: 80px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#systemMessages {
+    right: 27%;
+    margin-bottom: 5%;
+    top: 3%;
+    position: relative;
+}
+
+#taskMsg {
+    float: right;
+    padding-top: 4%;
+    right: -15%;
 }
 
 #msg {
-    width: 60%;
-    border: solid 1px black;
-    padding: 5px;
+    padding: 3px;
+    width: 159%;
+    border: solid 2px rgb(30, 48, 30);
     background: rgba(0, 222, 101, 0.45)
 }
 
 #recipient {
+    padding: 3px;
     width: 25%;
-    border: solid 1px black;
-    padding: 5px;
+    border: solid 2px rgb(30, 48, 30);
     background: rgba(0, 222, 101, 0.45)
 }
 
 #messageList {
-    width: 100%;
+    width: 200%;
     margin: auto;
-    color: black;
     font-family: Century Gothic, sans-serif;
+    font-size: 16px;
 }
 
 #messageList div {
@@ -196,4 +243,24 @@ strong {
     background: rgba(202, 255, 226, 0.5);
     border: solid 1px green;
     /**background: rgba(0, 221, 79, 0.8);*/
+}
+
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track-piece{
+	background-color: #2b442b;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #3f633f;
+	outline: 2px solid #FFF;
+	outline-offset: -2px;
+	border: .1px solid #213421;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: #97bd97;
 }

@@ -37,6 +37,7 @@ $(document).ready(function() {
 
     $('#imgCon').click(function() {
         $('#imgCon').hide();
+        $('#connectText').hide();
         BYOI.connection = new WebSocket("ws://127.0.0.1:10000/");
 
         BYOI.connection.onopen = function (e) {
@@ -77,6 +78,7 @@ $(document).ready(function() {
                 $('#logo').show();
                 $('#imgSpeech').show();
                 $('#imgPerson').show();
+                
             }
 
             if (type == 'PACKET') {
@@ -129,7 +131,7 @@ $(document).ready(function() {
         };
     });
 
-    $('#closeButton').click(function() {
+    $('#imgBYOI').click(function() {
         BYOI.connection.close();
     });
 });
